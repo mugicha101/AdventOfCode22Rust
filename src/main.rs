@@ -6,5 +6,5 @@ mod day4;
 
 fn main() {
     day4::solve_a();
-    day54::solve_b();
+    day4::solve_b();
 }
