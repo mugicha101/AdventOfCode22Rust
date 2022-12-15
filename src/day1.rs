@@ -48,5 +48,5 @@ pub fn solve_b() {
     for el in max {
         sum_max += el;
     }
-    println!("{}", max);
+    println!("{}", sum_max);
 }
