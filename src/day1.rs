@@ -1,6 +1,6 @@
 use crate::fileio;
 
-pub fn solve_a() -> i32 {
+pub fn solve_a() {
     let mut input = fileio::input("src/day1.txt");
     input.push("".to_string());
     let mut max = 0;
@@ -17,10 +17,10 @@ pub fn solve_a() -> i32 {
             curr += val;
         }
     }
-    return max;
+    println!("{}", max);
 }
 
-pub fn solve_b() -> i32 {
+pub fn solve_b() {
     let mut input = fileio::input("src/day1.txt");
     input.push("".to_string());
     let mut max: [i32; 3] = [0; 3];
@@ -48,5 +48,5 @@ pub fn solve_b() -> i32 {
     for el in max {
         sum_max += el;
     }
-    return sum_max;
+    println!("{}", max);
 }

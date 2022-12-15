@@ -5,6 +5,6 @@ mod day3;
 mod day4;
 
 fn main() {
-    println!("{}", day4::solve_a());
-    println!("{}", day4::solve_b());
+    day4::solve_a();
+    day54::solve_b();
 }

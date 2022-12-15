@@ -1,6 +1,6 @@
 use crate::fileio;
 
-pub fn solve_a() -> i32 {
+pub fn solve_a() {
     let mut input = fileio::input("src/day4.txt");
     let mut count = 0;
     for ln in input {
@@ -20,10 +20,10 @@ pub fn solve_a() -> i32 {
         }
         count += ((l1 <= l2 && r1 >= r2) || (l1 >= l2 && r1 <= r2)) as i32;
     }
-    return count;
+    println!("{}", count);
 }
 
-pub fn solve_b() -> i32 {
+pub fn solve_b() {
     let mut input = fileio::input("src/day4.txt");
     let mut count = 0;
     for ln in input {
@@ -43,5 +43,5 @@ pub fn solve_b() -> i32 {
         }
         count += !(l1 > r2 || r1 < l2) as i32;
     }
-    return count;
+    println!("{}", count);
 }

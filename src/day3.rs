@@ -5,7 +5,7 @@ fn char_index(c: u8) -> usize {
     (if c & 32 != 0 {c - 'a' as u8} else {26 + c - 'A' as u8}) as usize
 }
 
-pub fn solve_a() -> i32 {
+pub fn solve_a() {
     let mut input = fileio::input("src/day3.txt");
     let mut psum: i32 = 0;
     for ln in input {
@@ -26,10 +26,10 @@ pub fn solve_a() -> i32 {
         }
         psum += found as i32;
     }
-    return psum;
+    println!("{}", psum);
 }
 
-pub fn solve_b() -> i32 {
+pub fn solve_b() {
     let mut input = fileio::input("src/day3.txt");
     let mut psum: i32 = 0;
     for i in (0..input.len()).step_by(3) {
@@ -53,5 +53,5 @@ pub fn solve_b() -> i32 {
         }
         psum += found;
     }
-    return psum;
+    println!("{}", psum);
 }

@@ -1,6 +1,6 @@
 use crate::fileio;
 
-pub fn solve_a() -> i32 {
+pub fn solve_a() {
     let mut input = fileio::input("src/day2.txt");
     let mut score: i32 = 0;
     for ln in input {
@@ -10,10 +10,10 @@ pub fn solve_a() -> i32 {
         let d: i32 = (b - a + 4) % 3;
         score += d * 3 + b + 1;
     }
-    return score;
+    println!("{}", score);
 }
 
-pub fn solve_b() -> i32 {
+pub fn solve_b() {
     let mut input = fileio::input("src/day2.txt");
     let mut score: i32 = 0;
     for ln in input {
@@ -23,5 +23,5 @@ pub fn solve_b() -> i32 {
         let b: i32 = (a + o + 2) % 3;
         score += o * 3 + b + 1;
     }
-    return score;
+    println!("{}", score);
 }
