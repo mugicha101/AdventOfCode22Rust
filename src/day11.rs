@@ -110,10 +110,6 @@ pub fn solve_b() {
             }
         }
     }
-    for i in &inspects {
-        print!("{} ", i);
-    }
-    println!();
     inspects.sort_unstable();
     inspects.reverse();
     println!("{}", inspects[0] * inspects[1]);
