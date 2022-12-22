@@ -18,17 +18,18 @@ mod day14;
 mod day15;
 mod day16;
 mod day17;
+mod day18;
 
 fn main() {
     {
         let start = Instant::now();
-        day17::solve_a();
+        day18::solve_a();
         let duration = start.elapsed();
         println!("part a: {:?}", duration);
     }
     {
         let start = Instant::now();
-        day17::solve_b();
+        day18::solve_b();
         let duration = start.elapsed();
         println!("part b: {:?}", duration);
     }
