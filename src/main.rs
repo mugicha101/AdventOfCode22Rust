@@ -1,3 +1,5 @@
+use std::time::{Duration, Instant};
+
 mod fileio;
 mod day1;
 mod day2;
@@ -15,8 +17,20 @@ mod day13;
 mod day14;
 mod day15;
 mod day16;
+mod day17;
 
 fn main() {
-    day16::solve_a();
-    day16::solve_b();
+    {
+        let start = Instant::now();
+        day17::solve_a();
+        let duration = start.elapsed();
+        println!("part a: {:?}", duration);
+    }
+    {
+        let start = Instant::now();
+        day17::solve_b();
+        let duration = start.elapsed();
+        println!("part b: {:?}", duration);
+    }
+
 }
