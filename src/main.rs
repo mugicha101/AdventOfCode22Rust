@@ -29,13 +29,13 @@ mod day24;
 fn main() {
     {
         let start = Instant::now();
-        day24::solve_a();
+        day23::solve_a();
         let duration = start.elapsed();
         println!("part a: {:?}", duration);
     }
     {
         let start = Instant::now();
-        day24::solve_b();
+        day23::solve_b();
         let duration = start.elapsed();
         println!("part b: {:?}", duration);
     }
