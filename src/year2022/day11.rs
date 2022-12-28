@@ -63,7 +63,7 @@ pub fn make_monkeys(input: &Vec<String>) -> Vec<Monkey> {
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day11.txt");
+    let input = fileio::input("src/year2022/input/day11.txt");
     let mut monkeys = make_monkeys(&input);
     let mut inspects: Vec<usize> = vec!(0; monkeys.len());
     for _ in 0..20 {
@@ -86,7 +86,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let input = fileio::input("src/day11.txt");
+    let input = fileio::input("src/year2022/input/day11.txt");
     let mut monkeys = make_monkeys(&input);
     let div_val = {
         let mut v = 1;

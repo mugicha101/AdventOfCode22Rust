@@ -1,7 +1,7 @@
 use crate::fileio;
 
 pub fn solve_a() {
-    let mut input = fileio::input("src/day4.txt");
+    let mut input = fileio::input("src/year2022/input/day4.txt");
     let mut count = 0;
     for ln in input {
         let (mut l1, mut r1) = (0, 0);
@@ -24,7 +24,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let mut input = fileio::input("src/day4.txt");
+    let mut input = fileio::input("src/year2022/input/day4.txt");
     let mut count = 0;
     for ln in input {
         let (mut l1, mut r1) = (0, 0);

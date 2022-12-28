@@ -29,7 +29,7 @@ fn create_sr_vec(input: &Vec<String>) -> Vec<SensorReach> {
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day15.txt");
+    let input = fileio::input("src/year2022/input/day15.txt");
     let sr_vec = create_sr_vec(&input);
     const ROW_Y: i32 = 2000000;
     enum Mark {
@@ -81,7 +81,7 @@ pub fn solve_a() {
 
 // after checking reddit - faster solution: rotate by 45 degrees and calc intersections to find hole
 pub fn solve_b() {
-    let input = fileio::input("src/day15.txt");
+    let input = fileio::input("src/year2022/input/day15.txt");
     let sr_vec = create_sr_vec(&input);
     enum Mark {
         RangeStart,

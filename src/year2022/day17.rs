@@ -4,7 +4,7 @@ use grid_state::*;
 
 mod grid_state {
     use std::collections::VecDeque;
-    use crate::day17::grid_state::Push::*;
+    use crate::year2022::day17::grid_state::Push::*;
     pub const WIDTH: usize = 7;
 
     enum Push {
@@ -168,7 +168,7 @@ mod grid_state {
 }
 
 pub fn solve_a() {
-    let input_raw = fileio::input("src/day17.txt");
+    let input_raw = fileio::input("src/year2022/input/day17.txt");
     let input = input_raw[0].as_bytes();
     let mut g = GridState::new(input);
     const CYCLES: u64 = 2022;
@@ -179,7 +179,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let input_raw = fileio::input("src/day17.txt");
+    let input_raw = fileio::input("src/year2022/input/day17.txt");
     let input = input_raw[0].as_bytes();
     let mut g = GridState::new(input);
     let mut g_slow = GridState::new(input);

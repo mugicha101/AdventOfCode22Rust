@@ -67,7 +67,7 @@ mod file_system {
 use file_system::*;
 
 fn create_files() -> Rc<RefCell<FileSystemObject>> {
-    let input = fileio::input("src/day7.txt");
+    let input = fileio::input("src/year2022/input/day7.txt");
     let root = Rc::new(RefCell::new(FileSystemObject::new_dir(&String::from("/"))));
     let mut path: Vec<Rc<RefCell<FileSystemObject>>> = Vec::new();
     path.push(Rc::clone(&root));

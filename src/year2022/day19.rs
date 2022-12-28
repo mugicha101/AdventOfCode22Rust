@@ -221,7 +221,7 @@ fn solve(input: &Vec<String>, time: u32) -> Vec<u32> {
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day19.txt");
+    let input = fileio::input("src/year2022/input/day19.txt");
     let bp_max_geodes = solve(&input, 24);
     let mut quality_sum = 0;
     for id in 0..bp_max_geodes.len() {
@@ -231,7 +231,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let mut input = fileio::input("src/day19.txt");
+    let mut input = fileio::input("src/year2022/input/day19.txt");
     input = input[0..3].to_owned();
     let bp_max_geodes = solve(&input, 32);
     let mut prod: u32 = 1;

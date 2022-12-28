@@ -37,7 +37,7 @@ fn to_deci(v: Vec<char>) -> u64 {
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day25.txt");
+    let input = fileio::input("src/year2022/input/day25.txt");
     let mut sum: u64 = 0;
     for ln in input {
         sum += to_deci(ln.chars().collect::<Vec<char>>());

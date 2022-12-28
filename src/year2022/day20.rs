@@ -70,13 +70,13 @@ fn mix(input: &Vec<i64>, links: &mut Vec<(usize, usize)>) {
 }
 
 pub fn solve_a() {
-    let (input, mut links) = parse_input(&fileio::input("src/day20.txt"));
+    let (input, mut links) = parse_input(&fileio::input("src/year2022/input/day20.txt"));
     mix(&input, &mut links);
     println!("{}", find_sum(&input, &links));
 }
 
 pub fn solve_b() {
-    let (mut input, mut links) = parse_input(&fileio::input("src/day20.txt"));
+    let (mut input, mut links) = parse_input(&fileio::input("src/year2022/input/day20.txt"));
     for i in &mut input {
         *i *= 811589153;
     }

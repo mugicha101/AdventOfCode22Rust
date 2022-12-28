@@ -3,7 +3,7 @@ use std::collections::{HashSet, LinkedList};
 use crate::fileio;
 
 pub fn solve_a() {
-    let input = fileio::input("src/day18.txt");
+    let input = fileio::input("src/year2022/input/day18.txt");
     let mut blocks: HashSet<(i32, i32, i32)> = HashSet::new();
     let mut surface_area: i32 = 0;
     for ln in input {
@@ -25,7 +25,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let input = fileio::input("src/day18.txt");
+    let input = fileio::input("src/year2022/input/day18.txt");
     let mut blocks: HashSet<(i32, i32, i32)> = HashSet::new();
     let mut min_vals = (i32::MAX, i32::MAX, i32::MAX);
     let mut max_vals = (i32::MIN, i32::MIN, i32::MIN);

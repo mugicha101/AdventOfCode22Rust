@@ -2,7 +2,7 @@ use std::collections::HashSet;
 use crate::fileio;
 
 pub fn solve_a() {
-    let input = fileio::input("src/day9.txt");
+    let input = fileio::input("src/year2022/input/day9.txt");
     let mut visited: HashSet<(i32, i32)> = HashSet::new();
     let mut head = (0, 0);
     let mut tail = (0, 0);
@@ -61,7 +61,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let input = fileio::input("src/day9.txt");
+    let input = fileio::input("src/year2022/input/day9.txt");
     let mut visited: HashSet<(i32, i32)> = HashSet::new();
     let mut segs: Vec<(i32, i32)> = vec!((0, 0); 10);
     for ln in input {

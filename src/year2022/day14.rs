@@ -54,7 +54,7 @@ fn create_grid(input: &Vec<String>, floor: bool) -> (Vec<Vec<bool>>, (usize, usi
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day14.txt");
+    let input = fileio::input("src/year2022/input/day14.txt");
     let (mut grid, offset, dim) = create_grid(&input, false);
     let spawn_pos = (500 - offset.0, 0 - offset.1);
     let mut sand_count = 0;
@@ -98,7 +98,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let input = fileio::input("src/day14.txt");
+    let input = fileio::input("src/year2022/input/day14.txt");
     let (mut grid, offset, dim) = create_grid(&input, true);
     // let origin_grid = grid.clone();
     let spawn_pos = (500 - offset.0, 0 - offset.1);

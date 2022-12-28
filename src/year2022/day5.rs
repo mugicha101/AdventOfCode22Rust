@@ -1,7 +1,7 @@
 use crate::fileio;
 
 fn read_input() -> (Vec<String>, usize, Vec<Vec<u8>>) {
-    let mut input = fileio::input("src/day5.txt");
+    let mut input = fileio::input("src/year2022/input/day5.txt");
     let mut i = 0;
     while i < input.len() && input[i].len() != 0 {
         i += 1;

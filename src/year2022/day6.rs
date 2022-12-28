@@ -1,7 +1,7 @@
 use crate::fileio;
 
 fn solve(l: usize) {
-    let binding = fileio::input("src/day6.txt");
+    let binding = fileio::input("src/year2022/input/day6.txt");
     let input = binding[0].as_bytes();
     let mut chars: [u8; 26] = [0; 26];
     let mut dups = 0;

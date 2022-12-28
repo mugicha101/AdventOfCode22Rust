@@ -94,13 +94,13 @@ fn solve(blizzards: &mut Vec<((i32, i32), u8)>, dim: &(i32, i32), inverse: bool)
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day24.txt");
+    let input = fileio::input("src/year2022/input/day24.txt");
     let (mut blizzards, dim) = parse_input(&input);
     println!("{}", solve(&mut blizzards, &dim, false));
 }
 
 pub fn solve_b() {
-    let input = fileio::input("src/day24.txt");
+    let input = fileio::input("src/year2022/input/day24.txt");
     let (mut blizzards, dim) = parse_input(&input);
     let mut sum = solve(&mut blizzards, &dim, false);
     move_blizzards(&mut blizzards, &dim);

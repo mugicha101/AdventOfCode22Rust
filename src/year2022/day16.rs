@@ -102,7 +102,7 @@ fn dfs(
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day16.txt");
+    let input = fileio::input("src/year2022/input/day16.txt");
     let (start_index, valves, indices) = get_valves(&input);
     const TIME: u32 = 30;
 
@@ -116,7 +116,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let input = fileio::input("src/day16.txt");
+    let input = fileio::input("src/year2022/input/day16.txt");
     let (start_index, valves, indices) = get_valves(&input);
     let indices = Arc::new(indices);
     let valves = Arc::new(valves);

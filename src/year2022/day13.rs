@@ -48,7 +48,7 @@ fn compare(lines: &[String; 2]) -> i32 {
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day13.txt");
+    let input = fileio::input("src/year2022/input/day13.txt");
     let mut sum = 0;
     let mut p_num = 1;
     for i in (0..input.len()).step_by(3) {
@@ -60,7 +60,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let input = fileio::input("src/day13.txt");
+    let input = fileio::input("src/year2022/input/day13.txt");
     let mut packets: Vec<String> = Vec::new();
     packets.push(String::from("[[2]]"));
     packets.push(String::from("[[6]]"));

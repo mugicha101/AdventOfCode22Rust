@@ -1,7 +1,7 @@
 use crate::fileio;
 
 pub fn solve_a() {
-    let mut input = fileio::input("src/day1.txt");
+    let mut input = fileio::input("src/year2022/input/day1.txt");
     input.push("".to_string());
     let mut max = 0;
     let mut curr = 0;
@@ -21,7 +21,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let mut input = fileio::input("src/day1.txt");
+    let mut input = fileio::input("src/year2022/input/day1.txt");
     input.push("".to_string());
     let mut max: [i32; 3] = [0; 3];
     let mut mi = 0;

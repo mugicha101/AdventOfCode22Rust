@@ -3,7 +3,7 @@ use std::cmp::min;
 use std::collections::{HashMap, VecDeque};
 use std::rc::Rc;
 use priority_queue::PriorityQueue;
-use crate::day21::monkey::*;
+use crate::year2022::day21::monkey::*;
 use crate::fileio;
 
 mod monkey {
@@ -148,13 +148,13 @@ fn run(monkeys: Rc<RefCell<Vec<Monkey>>>, index: usize) -> i64 {
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day21.txt");
+    let input = fileio::input("src/year2022/input/day21.txt");
     let (monkeys, root_index, _) = create_tree(&input);
     println!("{}", run(monkeys.clone(), root_index));
 }
 
 pub fn solve_b() {
-    let input = fileio::input("src/day21.txt");
+    let input = fileio::input("src/year2022/input/day21.txt");
     let (mut monkeys, root_index, human_index) = create_tree(&input);
     *monkeys.borrow_mut()[root_index].get_equation_mut() = Box::new(Subtraction{});
     monkeys.borrow_mut()[root_index].set_id(2);

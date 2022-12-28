@@ -2,7 +2,7 @@ use std::cmp::max;
 use crate::fileio;
 
 pub fn solve_a() {
-    let input = fileio::input("src/day8.txt");
+    let input = fileio::input("src/year2022/input/day8.txt");
     let (rows, cols) = (input.len(), input[0].len());
     let mut heights: Vec<Vec<u8>> = vec![vec![0; cols]; rows];
     let mut visible: Vec<Vec<bool>> = vec![vec![false; cols]; rows];
@@ -67,7 +67,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let input = fileio::input("src/day8.txt");
+    let input = fileio::input("src/year2022/input/day8.txt");
     let (rows, cols) = (input.len(), input[0].len());
     let mut heights: Vec<Vec<u8>> = vec![vec![0; cols]; rows];
     let mut max_score = 0;

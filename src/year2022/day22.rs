@@ -23,7 +23,7 @@ fn parse_board(input: &Vec<String>) -> (Vec<usize>, Vec<Vec<bool>>, &[u8]) {
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day22.txt");
+    let input = fileio::input("src/year2022/input/day22.txt");
     let (left_margin, board, instructs) = parse_board(&input);
     let mut value: u32 = 0;
     let mut dir: u8 = 0;
@@ -121,7 +121,7 @@ const FACE_TRANS: [[(usize, usize);4];6] = [
 ];
 
 pub fn solve_b() {
-    let input = fileio::input("src/day22.txt");
+    let input = fileio::input("src/year2022/input/day22.txt");
     // find w
     let mut tile_count = 0;
     for l in 0..(input.len()-2) {

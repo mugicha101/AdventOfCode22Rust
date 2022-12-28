@@ -6,7 +6,7 @@ fn char_index(c: u8) -> usize {
 }
 
 pub fn solve_a() {
-    let mut input = fileio::input("src/day3.txt");
+    let mut input = fileio::input("src/year2022/input/day3.txt");
     let mut psum: i32 = 0;
     for ln in input {
         let mut m: [bool; 52] = [false; 52];
@@ -30,7 +30,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let mut input = fileio::input("src/day3.txt");
+    let mut input = fileio::input("src/year2022/input/day3.txt");
     let mut psum: i32 = 0;
     for i in (0..input.len()).step_by(3) {
         let ln1 = input[i].bytes();

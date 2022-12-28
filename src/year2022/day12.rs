@@ -68,7 +68,7 @@ fn shortest_path(width: usize, height: usize, h_map: &Vec<Vec<u8>>, start: (usiz
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day12.txt");
+    let input = fileio::input("src/year2022/input/day12.txt");
     let height = input.len();
     let width = input[0].len();
     let (h_map, start, end, _) = parse(input);
@@ -76,7 +76,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let input = fileio::input("src/day12.txt");
+    let input = fileio::input("src/year2022/input/day12.txt");
     let height = input.len();
     let width = input[0].len();
     let (h_map, _, end, lowest) = parse(input);

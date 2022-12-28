@@ -99,7 +99,7 @@ fn advance_round(elves: &mut HashSet<(i32, i32)>, proposed: &mut HashMap<(i32, i
 }
 
 pub fn solve_a() {
-    let input = fileio::input("src/day23.txt");
+    let input = fileio::input("src/year2022/input/day23.txt");
     let mut elves = parse_input(&input);
     let mut proposed: HashMap<(i32, i32), (i32, i32)> = HashMap::new(); // proposed dest -> source
     const ROUNDS: u32 = 10;
@@ -118,7 +118,7 @@ pub fn solve_a() {
 }
 
 pub fn solve_b() {
-    let input = fileio::input("src/day23.txt");
+    let input = fileio::input("src/year2022/input/day23.txt");
     let mut elves = parse_input(&input);
     let mut proposed: HashMap<(i32, i32), (i32, i32)> = HashMap::new(); // proposed dest -> source
     let mut round = 0;
